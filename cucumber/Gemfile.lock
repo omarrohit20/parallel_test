@@ -1,0 +1,105 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    addressable (2.4.0)
+    ast (2.3.0)
+    builder (3.2.2)
+    capybara (2.7.1)
+      addressable
+      mime-types (>= 1.16)
+      nokogiri (>= 1.3.3)
+      rack (>= 1.0.0)
+      rack-test (>= 0.5.4)
+      xpath (~> 2.0)
+    childprocess (0.5.9)
+      ffi (~> 1.0, >= 1.0.11)
+    cliver (0.3.2)
+    cucumber (2.3.3)
+      builder (>= 2.1.2)
+      cucumber-core (~> 1.4.0)
+      cucumber-wire (~> 0.0.1)
+      diff-lcs (>= 1.1.3)
+      gherkin (~> 3.2.0)
+      multi_json (>= 1.7.5, < 2.0)
+      multi_test (>= 0.1.2)
+    cucumber-core (1.4.0)
+      gherkin (~> 3.2.0)
+    cucumber-wire (0.0.1)
+    diff-lcs (1.2.5)
+    ffi (1.9.10)
+    gherkin (3.2.0)
+    json (1.8.3)
+    mime-types (2.99.2)
+    multi_json (1.12.1)
+    multi_test (0.1.2)
+    nokogiri (1.5.9)
+    parser (2.3.1.2)
+      ast (~> 2.2)
+    poltergeist (1.9.0)
+      capybara (~> 2.1)
+      cliver (~> 0.3.1)
+      multi_json (~> 1.0)
+      websocket-driver (>= 0.2.0)
+    powerpack (0.1.1)
+    rack (1.6.4)
+    rack-test (0.6.3)
+      rack (>= 1.0)
+    rainbow (2.1.0)
+    rake (11.1.2)
+    rspec (3.4.0)
+      rspec-core (~> 3.4.0)
+      rspec-expectations (~> 3.4.0)
+      rspec-mocks (~> 3.4.0)
+    rspec-core (3.4.4)
+      rspec-support (~> 3.4.0)
+    rspec-expectations (3.4.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.4.0)
+    rspec-mocks (3.4.1)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.4.0)
+    rspec-support (3.4.1)
+    rubocop (0.40.0)
+      parser (>= 2.3.1.0, < 3.0)
+      powerpack (~> 0.1)
+      rainbow (>= 1.99.1, < 3.0)
+      ruby-progressbar (~> 1.7)
+      unicode-display_width (~> 1.0, >= 1.0.1)
+    rubocop-checkstyle_formatter (0.2.0)
+      rubocop (>= 0.20.1)
+    ruby-progressbar (1.8.1)
+    rubyzip (1.2.0)
+    selenium-webdriver (2.53.0)
+      childprocess (~> 0.5)
+      rubyzip (~> 1.0)
+      websocket (~> 1.0)
+    unicode-display_width (1.1.1)
+    websocket (1.2.3)
+    websocket-driver (0.6.4)
+      websocket-extensions (>= 0.1.0)
+    websocket-extensions (0.1.2)
+    xpath (2.0.0)
+      nokogiri (~> 1.3)
+    yard (0.9.5)
+    yard-cucumber (3.0.0)
+      cucumber (~> 2)
+      gherkin (~> 3)
+      yard (~> 0.8, >= 0.8.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  capybara
+  cucumber
+  json
+  poltergeist
+  rake
+  rspec
+  rubocop
+  rubocop-checkstyle_formatter
+  selenium-webdriver
+  yard-cucumber
+
+BUNDLED WITH
+   1.12.5
