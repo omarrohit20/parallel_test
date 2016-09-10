@@ -88,8 +88,8 @@ def process_container
 end
 
 # Build docker image and pull automation latest source
-output = `sudo docker build -t #{CONTAINER} .`
-$logger.info(output)
+# output = `sudo docker build -t #{CONTAINER} .`
+# $logger.info(output)
 
 # Dry run to get list of test scenario
 output = `sudo docker run -a stdout -i #{CONTAINER} "cucumber -p selenium --tags #{FLAG} app_env=#{APPENV} dry_run=true -f rerun" | sed "s,\x1B\[[0-9;]*[a-zA-Z],,g"`
@@ -128,5 +128,5 @@ endTime = Time.now
 $logger.info(time_diff(startTime, endTime))
 
 $logger.close
-`sudo docker rm $(sudo docker ps -a -q)`
+#`sudo docker rm $(sudo docker ps -a -q)`
 
