@@ -88,8 +88,9 @@ def process_container
 end
 
 # Build docker image and pull automation latest source
-# output = `sudo docker build -t #{CONTAINER} .`
+`sudo docker build -t my_test .`
 # $logger.info(output)
+
 
 # Dry run to get list of test scenario
 output = `sudo docker run -a stdout -i #{CONTAINER} "cucumber -p selenium --tags #{FLAG} app_env=#{APPENV} dry_run=true -f rerun" | sed "s,\x1B\[[0-9;]*[a-zA-Z],,g"`
@@ -97,6 +98,8 @@ output.split(/ /).each{ |testcase|
   $testcases[testcase] = RETRYCOUNT
 }
 $logger.info("Total Test Scenario #{$testcases.length}")
+
+
 
 # Iterate each test case, pop user credentials from pool queue
 # And run scenario in docker container

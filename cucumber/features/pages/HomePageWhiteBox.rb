@@ -7,6 +7,7 @@ class HomePageWhiteBox
   end
 
   def visit_home_page(url)
+    puts url
     @session.visit(url)
   end
 

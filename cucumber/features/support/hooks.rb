@@ -1,5 +1,7 @@
 require_relative './pages'
 
+File.delete('temp/newslink.txt') if File.exist?('temp/newslink.txt')
+
 Before do
   ## setup code
 end
