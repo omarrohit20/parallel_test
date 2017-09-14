@@ -47,14 +47,6 @@ Cucumber::Rake::Task.new(:poltergeist) do |t|
   t.cucumber_opts = 'features -p poltergeist --format pretty --profile html '
 end
 
-Cucumber::Rake::Task.new(:get_news) do |t|
-  t.cucumber_opts = 'features -p poltergeist --format pretty --profile html -p get_news '
-end
-
-Cucumber::Rake::Task.new(:get_links) do |t|
-  t.cucumber_opts = 'features -p poltergeist --format pretty --profile html -p get_links '
-end
-
 Cucumber::Rake::Task.new(:chrome) do |t|
   t.cucumber_opts = 'features -p chrome --format pretty --profile html '
 end

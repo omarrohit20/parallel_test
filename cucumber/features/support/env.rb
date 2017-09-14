@@ -4,7 +4,6 @@ require 'capybara/cucumber'
 require 'rspec'
 require 'capybara/poltergeist'
 require 'selenium-webdriver'
-require 'mongo'
 
 Capybara.configure do |config|
   config.run_server = false
@@ -21,7 +20,7 @@ end
 
 Capybara.register_driver :poltergeist do |app|
   options = {
-    js_errors: false,
+    js_errors: true,
     timeout: 240,
     debug: false,
     phantomjs_options: ['--load-images=no', '--disk-cache=false'],
